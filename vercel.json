@@ -3,9 +3,9 @@
     "builds": [
         {"src": "server.py", "use": "@vercel/python"}
     ],
-    "route": [
+    "rewrites": [
         {
-            "src": "/(.*)", "dest": "server.py"
+            "src": "/(.*)", "destination": "/"
         }
     ]
 }
